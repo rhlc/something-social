@@ -1,11 +1,9 @@
-import Link from "next/link";
-import Loader from "../components/Loader";
+import toast from "react-hot-toast";
 
 export default function Home() {
   return (
     <div>
-      <Loader show />
-      <Link href="#">link</Link>
+      <button onClick={() => toast.success("hello toast!")}>toast me!</button>
     </div>
   );
 }
